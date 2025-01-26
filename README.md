@@ -16,7 +16,7 @@
 - ホストOS: Windows 11
 - CPU: 13th Gen Intel(R) Core(TM) i5-1335U   1.30 GHz
 - GPU: なし
-- RAMM 16.0 GB
+- RAM: 16.0 GB
 
 ## 使用技術
 
@@ -35,8 +35,8 @@
 1. リポジトリをクローン
 
 ```
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/yutawtr1214/deepseek-r1-1.5b-ja.git
+cd deepseek-r1-1.5b-ja
 ```
 
 
