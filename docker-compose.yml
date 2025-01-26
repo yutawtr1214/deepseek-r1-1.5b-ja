@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ollama:
+    container_name: ollama-for-ja
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+  app:
+    container_name: app-for-ja
+    build: .
+    depends_on:
+      - ollama
+    volumes:
+      - .:/app
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+
+volumes:
+  ollama_data:
